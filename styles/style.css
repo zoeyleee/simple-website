@@ -1,3 +1,17 @@
 h1 {
-    color: black
+    color: #04ADBF;
+    text-align: center;
+    font-size: 66px;
 }
+
+
+html {
+    background-color: #CEDEF2;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+  }
