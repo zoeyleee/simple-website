@@ -6,22 +6,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
-    <script src="../scripts/main.js"></script>
+    
 </head>
 <body>
-    <h1>Beach Parking</h1>
+    <h1 id="d">Beach Parking</h1>
     <img src="../images/beach.png" alt="man resting in beach chair image">
     <div class="search-wrapper">
-        <label for="search">Search Beaches</label>
-        <input type="search" id="search">
+        <label for="search">Search</label>
+        <input type="search" id="search" placeholder="search by beach, zip code, or city"> 
     </div>
     <div class="beach-cards"></div>
-    <template id="data-beach-template">
+    <template data-beach-template>
         <div class="card">
             <div class="header"></div>
             <div class="body"></div>
         </div>
     </template>
     <div ></div>
+    <!-- TODO: Step 4A2: Add a generic sidebar -->
+    <!-- The slide-out panel for showing place details -->
+    <div id="panel"></div>
+
+    <!-- Map appears here -->
+    <div id="map"></div>
+    <script src="../scripts/main.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMoB-XGEL2W1IajiANZxAj5jQOYVd4zts&libraries=places&callback=initMap"></script>
 </body>
 </html>
