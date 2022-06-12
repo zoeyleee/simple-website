@@ -6,10 +6,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <script src="../scripts/main.js"></script>
 </head>
 <body>
     <h1>Beach Parking</h1>
     <img src="../images/beach.png" alt="man resting in beach chair image">
-    <script src="scripts/main.js"></script>
+    <div class="search-wrapper">
+        <label for="search">Search Beaches</label>
+        <input type="search" id="search">
+    </div>
+    <div class="beach-cards"></div>
+    <template id="data-beach-template">
+        <div class="card">
+            <div class="header"></div>
+            <div class="body"></div>
+        </div>
+    </template>
+    <div ></div>
 </body>
 </html>

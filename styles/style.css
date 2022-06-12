@@ -7,11 +7,50 @@ h1 {
 
 html {
     background-color: #CEDEF2;
-    font-size: 14px;
+    font-size: 20px;
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 
 img {
     display: block;
     margin: 0 auto;
+    position: fixed; bottom: 0px; right: 0px;
+    width: 30%;
+    height: auto;
+  }
+
+  .search-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+  }
+
+  input {
+    font-size: 1rem;
+  }
+
+  .beach-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit);
+    gap: 10%;
+    margin-top: 2rem;
+  }
+
+  .card {
+    border: hidden;
+    padding: 0.5rem;
+  }
+
+  .card > .header {
+    margin-bottom: .25rem;
+  }
+
+  .card > .body {
+    font-size: 0.8rem;
+    color: #777;
+  }
+
+  .hide {
+    display: none;
   }

@@ -1,2 +1,4 @@
-const myHeading = document.querySelector('h1');
-myHeading.textContent = 'Hello world!';
+const beachCardTemplate = document.querySelector('#data-beach-template');
+
+const card = beachCardTemplate.content.cloneNode(true)
+console.log(card)
